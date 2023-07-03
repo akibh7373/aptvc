@@ -137,10 +137,11 @@ const seaFoodProducts = [
     },
 ];
 
-const leather_wrapper = document.querySelector('.seafood_wrapper');
+const seafoodsWrapper = document.querySelector('.seafood_wrapper');
+const fishWrapper = document.querySelector('.fish_wrapper');
 
 seaFoodProducts.map(({ id, image, title }) => {
-    leather_wrapper.innerHTML += `
+    seafoodsWrapper.innerHTML += `
     <div class="jute_items text-center">
         <div
             id="${id}"

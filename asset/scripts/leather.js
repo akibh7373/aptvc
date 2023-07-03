@@ -1,5 +1,5 @@
 // 
-const leatherProducts = [
+const shoesProducts = [
     {
         id: 1,
         image: 'jpg',
@@ -100,6 +100,9 @@ const leatherProducts = [
         image: 'jpg',
         title: 'lemon'
     },
+];
+
+const bagsProduct = [
     {
         id: 21,
         image: 'jpg',
@@ -195,6 +198,9 @@ const leatherProducts = [
         image: 'jpg',
         title: 'ridge gourd'
     },
+];
+
+const accessoriesProduct = [
     {
         id: 40,
         image: 'jpg',
@@ -267,10 +273,36 @@ const leatherProducts = [
     },
 ];
 
-const leather_wrapper = document.querySelector('.leather_wrapper');
+const shoes_wrapper = document.querySelector('.shoes_wrapper');
+const bags_wrapper = document.querySelector('.bags_wrapper');
+const accessories_wrapper = document.querySelector('.accessories_wrapper');
 
-leatherProducts.map(({ id, image, title }) => {
-    leather_wrapper.innerHTML += `
+shoesProducts.map(({ id, image, title }) => {
+    shoes_wrapper.innerHTML += `
+    <div class="jute_items text-center">
+        <div
+            id="${id}"
+            class="jute_img items_img"
+            style="background-image: url('/src/images/pages/leather/items${id}.${image}');"
+        >
+        </div>
+        </div>
+        `
+});
+bagsProduct.map(({ id, image, title }) => {
+    bags_wrapper.innerHTML += `
+    <div class="jute_items text-center">
+        <div
+            id="${id}"
+            class="jute_img items_img"
+            style="background-image: url('/src/images/pages/leather/items${id}.${image}');"
+        >
+        </div>
+        </div>
+        `
+});
+accessoriesProduct.map(({ id, image, title }) => {
+    accessories_wrapper.innerHTML += `
     <div class="jute_items text-center">
         <div
             id="${id}"
