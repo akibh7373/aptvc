@@ -1,0 +1,14 @@
+:root {
+  --red: #dc3545;
+  --light-green: #03fb32;
+  --white-primary: #e5e5e5;
+}
+.heading_title {
+  font-size: 50px;
+  font-weight: 600;
+}
+@media (max-width: 575.98px) {
+  .heading_title {
+    font-size: 20px;
+  }
+}

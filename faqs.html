@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>APT Private Ltd</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/asset/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/styles/all.min.css" />
+    <link rel="stylesheet" href="/asset/styles/slick.css" />
+    <link rel="stylesheet" href="/asset/styles/default.css" />
+    <link rel="stylesheet" href="/asset/styles/global.css" />
+    <link rel="stylesheet" href="/asset/styles/index.css" />
+    <link rel="stylesheet" href="/asset/styles/responsive.css" />
+    <style>
+      .header {
+        position: static;
+      }
+      .core_value_bg {
+        position: relative;
+        background: url("/src/images/pages/navigation-page/core-value-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+      .core_value_bg::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        z-index: -1;
+        content: "";
+      }
+      .core_value_wrapper {
+        position: relative;
+        z-index: 2;
+      }
+      .core_value_wrapper::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #fff;
+        opacity: 0.6;
+        z-index: -2;
+      }
+      .core_value_ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .core_value_li {
+        margin-bottom: 25px;
+        line-height: 25px;
+      }
+      .core_value_wrapper span {
+        line-height: 30px;
+      }
+      @media only screen and (min-width: 1200px) {
+        body {
+          height: 100%;
+        }
+      }
+      @media (max-width: 991px) {
+        .core_value_bg {
+          background: #fff;
+        }
+        .core_value_bg::before {
+          display: none;
+        }
+        .core_value_wrapper::before {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <!-- <div class="loader bg-dark w-100 h-100">
+        <div class="circle_loader"></div>
+    </div> -->
+
+    <!-- Header Nav -->
+    <nav class="header py-1 py-lg-1 red__bg">
+      <div
+        class="container d-flex justify-content-lg-start align-items-lg-center"
+      >
+        <div
+          class="bar_area d-flex me-md-5 me-lg-5 justify-content-center align-items-end flex-column"
+        >
+          <span class="bar primary bg-white rounded"></span>
+          <span class="bar bg-white small_bar rounded"></span>
+          <span class="bar secondary bg-white rounded"></span>
+        </div>
+        <div
+          class="responsive_content d-flex justify-content-start align-items-center flex-column flex-sm-column flex-lg-row"
+        >
+          <div class="close_btn ps-4 ps-lg-5 pt-0 pt-lg-2 pt-sm-0">
+            <i class="fas fa-times"></i>
+          </div>
+          <div
+            class="left_menu d-flex pt-5 p-lg-5 justify-content-center align-items-center align-items_sm-center align-items-md-center align-items-lg-start flex-column bg-danger"
+          >
+            <a
+              href="core-value.html"
+              class="menu my-1 mb-lg-1 text-uppercase text-white"
+              >core value</a
+            >
+            <a
+              href="about.html"
+              class="menu mb-1 mb-lg-1 text-uppercase text-white"
+              >about us</a
+            >
+            <a
+              href="faqs.html"
+              class="menu mb-1 mb-lg-1 text-uppercase text-white"
+              >faq<span class="text-lowercase">s</span>
+            </a>
+            <a
+              href="sourcing.html"
+              class="menu mb-1 mb-lg-1 text-uppercase text-white"
+              >sourcing</a
+            >
+            <a href="procurement.html" class="menu text-uppercase text-white"
+              >Procurement</a
+            >
+            <a
+              href="private-label-section.html"
+              class="menu text-uppercase text-white"
+              >private label section</a
+            >
+            <a href="" class="menu text-uppercase text-white">CONTACT US</a>
+          </div>
+          <div
+            class="right_menu d-flex px-lg-5 justify-content-center align-items-center align-items_sm-center align-items-md-center align-items-lg-start flex-column"
+          >
+            <!-- <a href="" class="payment_btn text-uppercase rounded-pill bg-transparent text-white">
+                        online payment
+                    </a> -->
+            <span class="follow_us mb-2 mb-lg-3 text-capitalize text-white"
+              >follow us</span
+            >
+            <div class="social_link">
+              <a href="" class="icons text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="" class="icons mx-3 mx-lg-3 text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="" class="icons text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="" class="icons ms-3 ms-lg-3 text-white"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header_left d-md-flex d-lg-flex d-none d-sm-none justify-content-start align-items-center flex-row"
+        >
+          <a
+            href="index.html"
+            class="nav_link header_nav d-none d-lg-block me-5 text-uppercase text-white"
+            >home</a
+          >
+          <a
+            href="#"
+            class="nav_link header_nav product_nav d-none d-lg-block text-uppercase text-white"
+            >product</a
+          >
+        </div>
+        <div
+          class="header_right d-flex justify-content-center align-items-center w-100"
+        >
+          <a href="index.html" class="logo text-uppercase text-white"
+            >APT Private Ltd</a
+          >
+        </div>
+      </div>
+      <div class="product_nav_wrapper py-lg-4"></div>
+    </nav>
+    <!-- core value heading -->
+    <div class="heading_wrapper py-2 py-lg-3" style="background-color: #cacaca">
+      <div class="container">
+        <a href="index.html" class="text-uppercase text-red">home</a>
+        <span>>></span>
+        <span class="text-uppercase text-dark"
+          >FAQ<span class="text-lowercase">s</span></span
+        >
+      </div>
+    </div>
+    <!-- core value decribtion -->
+    <div class="core_value_bg">
+      <div class="container">
+        <div class="core_value_wrapper py-3 py-lg-5 px-lg-5">
+          <h2
+            class="heading_title py-3 py-lg-0 text-uppercase text-center text-red"
+          >
+            faq<span class="text-lowercase">S</span>
+          </h2>
+          <p class="core_value_desc text-red">
+            <span class="d-inline-block mb-1 mt-lg-5 mb-lg-2"
+              >AptWin Corporation - Unleashing Boundless Trade and Sourcing
+              Marvels.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q1: What makes AptWin Corporation an extraordinary international
+              trading company?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A1: AptWin Corporation goes beyond the ordinary, combining
+              visionary strategies, cutting-edge technologies, and a passion for
+              excellence. We redefine the landscape of international trade,
+              sourcing the world's finest products while facilitating the export
+              of premium Bangladeshi offerings. Prepare to embark on a
+              mind-blowing journey like no other.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q2: How does AptWin Corporation facilitate the export of
+              Bangladeshi premium products?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A2: AptWin Corporation is the gateway to global success for
+              Bangladeshi premium products. With our extensive network, market
+              expertise, and personalized approach, we connect local producers
+              and artisans to international markets hungry for exceptional
+              craftsmanship. We provide end-to-end support, from market analysis
+              and branding to logistics and distribution, ensuring their
+              products shine on the global stage.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q3: How does AptWin Corporation source the world's finest
+              products?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A3: We possess an unparalleled ability to source the crème de la
+              crème from around the world. AptWin Corporation leverages a vast
+              global network, meticulously researching trends, attending trade
+              shows, and forging partnerships with top-tier suppliers. Our
+              relentless pursuit of excellence ensures that only the most
+              extraordinary products find their way into our discerning
+              portfolio.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q4: What sets AptWin Corporation apart as a sourcing and
+              procurement agent?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A4: AptWin Corporation is not your ordinary sourcing and
+              procurement agent. We are avant-garde thinkers, disruptors of the
+              norm. Our out-of-the-box approach combines innovative sourcing
+              strategies, advanced data analytics, and intelligent procurement
+              systems. We uncover hidden gems, optimize supply chains, and
+              maximize value for our clients in ways that will leave you
+              spellbound.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q5: How does AptWin Corporation ensure the quality and
+              authenticity of sourced products?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A5: Quality and authenticity are at the core of our sourcing
+              philosophy. AptWin Corporation employs stringent supplier vetting
+              processes, conducting thorough audits and certifications to
+              guarantee top-notch quality. We also leverage cutting-edge
+              technologies such as blockchain to ensure product traceability,
+              authenticity, and ethical sourcing, giving you peace of mind and
+              unmatched product integrity.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q6: How does AptWin Corporation navigate global supply chain
+              challenges?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A6: AptWin Corporation is a master of supply chain navigation. We
+              possess deep expertise in international logistics, customs
+              regulations, and trade compliance. Our dedicated team employs
+              innovative approaches, strategic partnerships, and advanced
+              technologies to overcome supply chain challenges swiftly and
+              seamlessly, ensuring efficient and timely delivery of products.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q7: Can AptWin Corporation handle large-scale procurement
+              projects?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A7: Absolutely! AptWin Corporation thrives on handling
+              large-scale procurement projects with finesse. Whether it's bulk
+              orders, complex requirements, or tight deadlines, our experienced
+              team has the capabilities and network to source, negotiate, and
+              deliver on a grand scale. We pride ourselves on our ability to
+              tackle any challenge and exceed expectations.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q8: How does AptWin Corporation ensure sustainable and ethical
+              sourcing practices?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A8: Sustainability and ethics are deeply embedded in our sourcing
+              DNA. AptWin Corporation upholds strict ethical sourcing
+              guidelines, promoting fair trade, social responsibility, and
+              environmental stewardship. We partner with suppliers who share our
+              values and implement sustainable practices throughout the supply
+              chain, ensuring your products are sourced responsibly, with
+              respect for people and the planet.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q9: What innovative technologies does AptWin Corporation leverage
+              in sourcing and procurement?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A9: AptWin Corporation is at the forefront of technology
+              adoption. We harness artificial intelligence, data analytics, and
+              automation tools to optimize sourcing and procurement processes.
+              From AI-driven supplier selection to predictive demand
+              forecasting, we embrace technological marvels that enhance
+              efficiency, reduce costs, and drive unparalleled value for our
+              clients.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q11: How does AptWin Corporation ensure competitive pricing for
+              sourced products?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A11: AptWin Corporation employs a strategic approach to pricing,
+              leveraging our extensive market knowledge, supplier relationships,
+              and negotiation expertise. Through rigorous analysis,
+              benchmarking, and optimization, we secure competitive pricing that
+              delivers value without compromising on product quality or
+              authenticity.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q12: Can AptWin Corporation handle the complexities of customs
+              and international trade regulations?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A12: Absolutely! AptWin Corporation has a deep understanding of
+              customs procedures and international trade regulations. We
+              navigate the complexities of import/export requirements,
+              documentation, tariffs, and compliance to ensure smooth and
+              hassle-free cross-border transactions. Our expertise minimizes
+              delays and ensures regulatory compliance at every stage.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q13: How does AptWin Corporation stay ahead of emerging market
+              trends?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A13: AptWin Corporation is constantly on the lookout for emerging
+              market trends. We stay ahead through continuous market research,
+              monitoring industry developments, and leveraging our extensive
+              network of global partners. This allows us to identify new
+              opportunities, anticipate market shifts, and keep our clients at
+              the forefront of global trade trends.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q14: Can AptWin Corporation handle customized sourcing requests?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A14: Absolutely! AptWin Corporation specializes in customized
+              sourcing solutions. We understand that each client may have unique
+              requirements, and we thrive on delivering tailored solutions. Our
+              team works closely with clients to understand their specific
+              needs, offering personalized sourcing and procurement strategies
+              that meet their exact specifications.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q15: How does AptWin Corporation ensure confidentiality and
+              protect intellectual property rights?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A15: Confidentiality and intellectual property protection are
+              paramount at AptWin Corporation. We have strict protocols and
+              robust agreements in place to safeguard sensitive information. Our
+              trusted network of suppliers undergoes a rigorous selection
+              process, and we work closely with legal experts to ensure
+              compliance with intellectual property laws, ensuring your valuable
+              assets are protected.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q16: Can AptWin Corporation provide market analysis and insights?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A16: Yes! AptWin Corporation offers comprehensive market analysis
+              and insights to support our clients' decision-making processes. We
+              provide detailed reports, market trends, competitor analysis, and
+              consumer behavior insights. With our deep market knowledge, you
+              can make informed business decisions and capitalize on emerging
+              opportunities.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q17: How does AptWin Corporation handle quality control and
+              product inspections?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A17: AptWin Corporation prioritizes quality control and product
+              inspections throughout the sourcing process. We have a dedicated
+              team that conducts rigorous quality checks and inspections at
+              every stage, from supplier selection to pre-shipment. We ensure
+              that products meet international quality standards and your
+              specific requirements, guaranteeing superior quality and customer
+              satisfaction.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q18: Can AptWin Corporation assist in building long-term supplier
+              relationships?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A18: Absolutely! AptWin Corporation recognizes the importance of
+              long-term supplier relationships. We foster collaborative
+              partnerships with trusted suppliers, nurturing mutual trust, and
+              driving continuous improvement. We believe in building sustainable
+              relationships that provide ongoing benefits, ensuring a reliable
+              supply chain and fostering growth for all parties involved.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q19: How does AptWin Corporation handle disputes or issues with
+              suppliers?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A19: AptWin Corporation takes a proactive approach to address
+              disputes or issues with suppliers. We have robust contractual
+              agreements in place that outline clear expectations and dispute
+              resolution mechanisms. In the event of any challenges, our
+              dedicated team works closely with all stakeholders to find
+              amicable solutions, ensuring minimal disruption to the sourcing
+              process.
+            </span>
+            <span class="d-inline-block my-0"
+              >Q20: Can AptWin Corporation provide references or case studies of
+              successful sourcing projects?
+            </span>
+            <span class="d-inline-block mb-3 mt-lg-0 mb-lg-3"
+              >A20: Yes! AptWin Corporation is proud of our successful sourcing
+              projects. We can provide references and case studies showcasing
+              our expertise, successful partnerships, and positive outcomes.
+              These examples demonstrate our track record of delivering
+              exceptional results and can offer valuable insights into the
+              transformative power of our sourcing solutions.
+            </span>
+
+            <!--  -->
+            <span class="d-inline-block pb-2 pb-lg-5 text-red"
+              >Prepare to have your expectations shattered as you explore the
+              incredible
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer py-3 py-lg-3 red__bg">
+      <div class="container">
+        <div
+          class="footer_wrapper d-flex justify-center justify-content-md-between justify-content-lg-between align-items-center align-items-lg-center flex-column flex-md-row flex-lg-row"
+        >
+          <p class="text-capitalize text-white">
+            &copy;right reserved by
+            <a href="index.html" class="text-uppercase text-white"
+              >apt private ltd</a
+            >.
+          </p>
+          <p class="text-white">
+            Developed by
+            <a href="" class="text-uppercase text-white"><u>ar craft</u></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="/asset/scripts/jquery-2.2.4.min.js"></script>
+    <script src="/asset/scripts/bootstrap.min.js"></script>
+    <script src="/asset/scripts/all.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="/asset/scripts/jquery.counterup.min.js"></script>
+    <script src="/asset/scripts/slick.min.js"></script>
+    <script src="/asset/scripts/product.js"></script>
+    <script src="/asset/scripts/slider.js"></script>
+    <script src="/asset/scripts/productCart.js"></script>
+    <script src="/asset/scripts/index.js"></script>
+  </body>
+</html>

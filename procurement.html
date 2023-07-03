@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>APT Private Ltd</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/asset/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/styles/all.min.css" />
+    <link rel="stylesheet" href="/asset/styles/slick.css" />
+    <link rel="stylesheet" href="/asset/styles/default.css" />
+    <link rel="stylesheet" href="/asset/styles/global.css" />
+    <link rel="stylesheet" href="/asset/styles/index.css" />
+    <link rel="stylesheet" href="/asset/styles/responsive.css" />
+    <style>
+      .header {
+        position: static;
+      }
+      .core_value_bg {
+        position: relative;
+        background: url("/src/images/pages/navigation-page/core-value-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+      .core_value_bg::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        z-index: -1;
+      }
+      .core_value_wrapper {
+        position: relative;
+        z-index: 2;
+      }
+      .core_value_wrapper::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #fff;
+        opacity: 0.6;
+        z-index: -2;
+      }
+      .core_value_ul {
+        padding-left: 1rem;
+      }
+      .core_value_li {
+        margin-bottom: 25px;
+        line-height: 25px;
+      }
+      .core_value_wrapper span {
+        line-height: 30px;
+      }
+      @media only screen and (min-width: 1200px) {
+        body {
+          height: 100%;
+        }
+      }
+      @media only screen and (max-width: 991px) {
+        .core_value_bg {
+          background: #fff;
+        }
+        .core_value_bg::before {
+          display: none;
+        }
+        .core_value_wrapper::before {
+          display: none;
+        }
+      }
+      </style>
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <!-- <div class="loader bg-dark w-100 h-100">
+        <div class="circle_loader"></div>
+    </div> -->
+
+    <!-- Header Nav -->
+    <nav class="header py-1 py-lg-1 red__bg">
+      <div
+        class="container d-flex justify-content-lg-start align-items-lg-center"
+      >
+        <div
+          class="bar_area d-flex me-md-5 me-lg-5 justify-content-center align-items-end flex-column"
+        >
+          <span class="bar primary bg-white rounded"></span>
+          <span class="bar bg-white small_bar rounded"></span>
+          <span class="bar secondary bg-white rounded"></span>
+        </div>
+        <div
+          class="responsive_content d-flex justify-content-start align-items-center flex-column flex-sm-column flex-lg-row"
+        >
+          <div class="close_btn ps-4 ps-lg-5 pt-0 pt-lg-2 pt-sm-0">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="left_menu d-flex pt-5 p-lg-5 justify-content-center align-items-center align-items_sm-center align-items-md-center align-items-lg-start flex-column bg-danger">
+            <a href="core-value.html" class="menu my-1 mb-lg-1 text-uppercase text-white">core value</a>
+            <a href="about.html" class="menu mb-1 mb-lg-1 text-uppercase text-white">about us</a>
+            <a href="faqs.html" class="menu mb-1 mb-lg-1 text-uppercase text-white">faq<span class="text-lowercase">s</span> </a>
+            <a href="sourcing.html" class="menu mb-1 mb-lg-1 text-uppercase text-white">sourcing</a>
+            <a href="procurement.html" class="menu text-uppercase text-white">Procurement</a>
+            <a href="private-label-section.html" class="menu text-uppercase text-white">private label section</a>
+            <a href="" class="menu text-uppercase text-white">CONTACT US</a>
+        </div>
+          <div
+            class="right_menu d-flex px-lg-5 justify-content-center align-items-center align-items_sm-center align-items-md-center align-items-lg-start flex-column"
+          >
+            <!-- <a href="" class="payment_btn text-uppercase rounded-pill bg-transparent text-white">
+                        online payment
+                    </a> -->
+            <span class="follow_us mb-2 mb-lg-3 text-capitalize text-white"
+              >follow us</span
+            >
+            <div class="social_link">
+              <a href="" class="icons text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="" class="icons mx-3 mx-lg-3 text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="" class="icons text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="" class="icons ms-3 ms-lg-3 text-white"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header_left d-md-flex d-lg-flex d-none d-sm-none justify-content-start align-items-center flex-row"
+        >
+          <a
+            href="index.html"
+            class="nav_link header_nav d-none d-lg-block me-5 text-uppercase text-white"
+            >home</a
+          >
+          <a
+            href="#"
+            class="nav_link header_nav product_nav d-none d-lg-block text-uppercase text-white"
+            >product</a
+          >
+        </div>
+        <div
+          class="header_right d-flex justify-content-center align-items-center w-100"
+        >
+          <a href="index.html" class="logo text-uppercase text-white"
+            >APT Private Ltd</a
+          >
+        </div>
+      </div>
+      <div class="product_nav_wrapper py-lg-4"></div>
+    </nav>
+    <!-- core value heading -->
+    <div class="heading_wrapper py-2 py-lg-3" style="background-color: #cacaca">
+      <div class="container">
+        <a href="index.html" class="text-uppercase text-red">home</a>
+        <span>>></span>
+        <span class="text-uppercase text-dark">Procurement</span>
+      </div>
+    </div>
+    <!-- core value decribtion -->
+    <div class="core_value_bg ">
+      <div class="container">
+        <div class="core_value_wrapper py-3 py-lg-5 px-lg-5">
+          <h2 class="heading_title py-3 py-lg-0 text-uppercase text-center text-red">
+            Procurement
+          </h2>
+          <span class="d-inline-block mb-0 mt-lg-5 mb-lg-0 text-red">AptWin Corporation's Extraordinary Expedition.</span>
+          <span class="d-inline-block mb-3 mt-lg-5 mb-lg-4 text-red">Welcome to AptWin Corporation's awe-inspiring procurement section, where innovation and excellence converge to redefine the boundaries of global trade. Step into a realm of unparalleled procurement prowess as we create an international business that facilitates the export of Bangladeshi premium products and imports the world's most exceptional offerings.</span>
+          <p class="core_value_desc text-red">
+            <ul class="core_value_ul text-red">
+              <li class="core_value_li">︎︎The Next Frontier of Procurement: AptWin Corporation pioneers a new era of procurement, transcending traditional methodologies. We push the boundaries of what's possible, combining cutting-edge technology, data-driven insights, and visionary strategies. Join us on this mind-blowing expedition as we unveil a procurement experience that redefines excellence.</li>
+              <li class="core_value_li">︎Futuristic Automation and AI: At AptWin Corporation, we harness the power of automation and artificial intelligence to revolutionize procurement. Our advanced systems optimize processes, streamline operations, and enhance decision-making. Witness the seamless integration of human expertise with futuristic technologies, unleashing unprecedented efficiency and agility in procurement.</li>
+              <li class="core_value_li">Ethical and Sustainable Sourcing: AptWin Corporation is committed to ethical and sustainable procurement practices. We prioritize suppliers who align with our values of fair trade, social responsibility, and environmental stewardship. Our stringent supplier vetting process ensures that the products we procure meet the highest standards of sustainability. Prepare to embark on a procurement journey that leaves a positive impact on people and the planet.</li>
+              <li class="core_value_li">Procurement Intelligence Redefined: Experience procurement intelligence like never before. AptWin Corporation employs cutting-edge analytics, market research, and predictive modeling to provide real-time insights and foresight into market trends, pricing dynamics, and supplier performance. Our procurement intelligence empowers you to make informed decisions, optimize costs, and gain a competitive edge in the global marketplace.</li>
+              <li class="core_value_li">Seamless Global Supply Chain Navigation: AptWin Corporation possesses unrivaled expertise in navigating the complexities of the global supply chain. Our dedicated team, armed with extensive knowledge of customs regulations, trade compliance, and logistics, ensures seamless and efficient transportation of goods across borders. Witness the orchestration of a harmonious global supply chain, where obstacles are overcome with unparalleled finesse.</li>
+              <li class="core_value_li">Collaborative Partnerships, Limitless Potential: At AptWin Corporation, we believe in the power of collaboration. We forge strategic partnerships with suppliers, clients, and industry leaders to unlock limitless potential. Through collaborative innovation, shared knowledge, and synergistic relationships, we create a procurement ecosystem that propels businesses towards unprecedented growth and success.</li>
+              <li class="core_value_li">︎Tailored Solutions, Exceeding Expectations: AptWin Corporation understands that each client has unique procurement needs. We provide tailored solutions that exceed expectations, catering to your specific requirements and objectives. Our dedicated team of procurement specialists works closely with you, leveraging their expertise and industry insights to deliver exceptional results that drive your business forward.</li>
+              <li class="core_value_li">︎Procurement Disruption, Competitive Advantage: Prepare for a paradigm shift in procurement. AptWin Corporation disrupts traditional procurement practices, challenging the status quo, and creating a competitive advantage for our clients. Our out-of-the-box thinking, innovative approaches, and relentless pursuit of excellence empower you to stay ahead of the curve and thrive in the dynamic global marketplace.</li>
+             </ul>
+          </p>
+          <span class="d-inline-block pb-2 pb-lg-5 text-red">Embark on an extraordinary procurement expedition with AptWin Corporation, where innovation, excellence, and global trade convergence redefine what is possible. Get ready to witness the procurement nexus, where traditional boundaries fade away, and a new realm of procurement excellence emerges.</span>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer py-3 py-lg-3 red__bg">
+            <div class="container">
+                <div class="footer_wrapper d-flex justify-center justify-content-md-between justify-content-lg-between align-items-center align-items-lg-center flex-column flex-md-row flex-lg-row">
+                    <p class="text-capitalize text-white">&copy;right reserved by <a href="index.html" class="text-uppercase text-white">apt private ltd</a>.</p><p class="text-white">Developed by <a href="" class="text-uppercase text-white"><u>ar craft</u></a></p>
+                </div>
+            </div>
+        </footer>
+    <!-- Scripts -->
+    <script src="/asset/scripts/jquery-2.2.4.min.js"></script>
+    <script src="/asset/scripts/bootstrap.min.js"></script>
+    <script src="/asset/scripts/all.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="/asset/scripts/jquery.counterup.min.js"></script>
+    <script src="/asset/scripts/slick.min.js"></script>
+    <script src="/asset/scripts/product.js"></script>
+    <script src="/asset/scripts/slider.js"></script>
+    <script src="/asset/scripts/productCart.js"></script>
+    <script src="/asset/scripts/index.js"></script>
+  </body>
+</html>

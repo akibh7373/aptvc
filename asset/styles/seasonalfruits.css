@@ -1,0 +1,132 @@
+:root {
+  --red: #dc3545;
+  --light-green: #03fb32;
+  --white-primary: #e5e5e5;
+  --blue-deep: #162738;
+}
+/* ********** sessional product ********** */
+.circular_progress {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(var(--red) 250.6deg, #e7e7e7 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress_two {
+  background: conic-gradient(var(--red) 10.6deg, #e7e7e7 0deg);
+}
+.progress_three {
+  background: conic-gradient(var(--red) 10.6deg, #e7e7e7 0deg);
+}
+.circular_progress::before {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  content: "";
+  background-color: #fff;
+}
+.progress_value {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+}
+.circle_text {
+  font-size: 14px;
+}
+.season_heading_title {
+  font-size: 17px;
+}
+.season_calender {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+}
+.icon_box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_box svg {
+  font-size: 20px;
+  color: #808080;
+}
+.green_icon {
+  animation: hiddencheck 2s ease-in-out infinite;
+}
+.green_icon svg {
+  color: var(--light-green);
+}
+.season_fruits_area {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@keyframes hiddencheck {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.season_fruits {
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  font-size: 15px;
+  transition: ease-in-out 250ms;
+  color: #919191;
+}
+.season_fruits:hover {
+  border-color: var(--red);
+  border-radius: 3px;
+  font-size: 15px;
+  color: var(--red);
+}
+.active_border {
+  border: 1px solid var(--red);
+}
+@media (max-width: 575.98px) {
+  .circular_progress {
+    width: 60px;
+    height: 60px;
+  }
+  .circular_progress::before {
+    width: 56px;
+    height: 56px;
+  }
+  .progress_value {
+    font-size: 15px;
+  }
+  .season_calender {
+    grid-template-columns: repeat(4, auto);
+    row-gap: 20px;
+  }
+  .season_fruits_area {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .season_calender {
+    grid-template-columns: repeat(6, auto);
+    row-gap: 20px;
+  }
+  .season_fruits_area {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 991px) {
+}

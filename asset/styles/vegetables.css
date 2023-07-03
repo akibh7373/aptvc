@@ -1,0 +1,27 @@
+/* .vegetable_btn {
+  font-size: 15px;
+}
+.vegetable_title {
+  font-size: 20px;
+}
+@media (max-width: 575.98px) {
+  .vegetables_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .vegetables_img {
+    height: 80px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .vegetables_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .vegetable_btn {
+    font-size: 11px;
+  }
+  .vegetable_title {
+    font-size: 14px;
+  }
+} */
