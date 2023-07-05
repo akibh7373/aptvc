@@ -54,9 +54,10 @@ const product_wrapper = document.querySelector('.product_wrapper');
 products.map(({ image, links }) => {
     product_wrapper.innerHTML += `
         <a href="${links}" class="product_content d-flex justify-content-center align-items-end pb-3 pb-lg-4" style="background-image: url('/src/images/products/${image}.jpg');">
-            <button href="${links}" class="more_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill">
-                more
-            </button>
+        <a class="product_overlay d-none"> ${title}</a>
         </a>
         `
 });
+        // <button href="${links}" class="more_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill">
+        //     more
+        // </button>

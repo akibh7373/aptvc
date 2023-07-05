@@ -8,7 +8,7 @@ Author:
 AUthor URI:
 bootstrap 5.0
 */
-/* Google fonts */
+/* Google fonts (FIra Sans) */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 
 :root {
@@ -324,11 +324,31 @@ video::before {
 }
 
 .product_content {
+  position: relative;
   border-radius: 15px;
   height: 400px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.product_overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: var(--red);
+  z-index: 2;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   cursor: pointer;
 }
 .product_img {
@@ -368,7 +388,19 @@ video::before {
   font-size: 30px;
   cursor: pointer;
 }
-/*  */
+/* ******* gallery ********* */
+.gallery_wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery_img_area {
+  height: 300px;
+}
+.gallery_btn {
+  cursor: pointer;
+}
+/* ******* we specialized in ********* */
 .card_wrapper {
   display: grid;
   gap: 20px;
@@ -549,4 +581,4 @@ label {
   color: #fff;
 }
 
-/* ********** Header ********** */
+/* ********** footer ********** */
