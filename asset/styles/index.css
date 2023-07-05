@@ -394,11 +394,12 @@ video::before {
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
-.gallery_img_area {
-  height: 300px;
-}
 .gallery_btn {
   cursor: pointer;
+}
+.gallery_title {
+  font-size: 30px;
+  font-weight: 500;
 }
 /* ******* we specialized in ********* */
 .card_wrapper {

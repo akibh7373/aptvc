@@ -67,7 +67,11 @@
   .product_content {
     height: 250px;
   }
-  /*  */
+  /* gallery */
+  .gallery_title {
+    font-size: 14px;
+  }
+  /* we specialized in */
   .card_wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;

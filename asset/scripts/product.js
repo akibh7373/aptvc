@@ -27,7 +27,7 @@ let products = [
     },
     {
         id: 5,
-        image: 'fruits and vegetables',
+        image: 'fruits',
         links: 'fruits&vegetables.html',
     },
     {
