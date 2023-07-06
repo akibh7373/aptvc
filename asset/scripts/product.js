@@ -3,31 +3,37 @@ let products = [
     {
         id: 1,
         image: 'fruits',
+        title: 'Jutes',
         links: 'jute.html',
     },
     {
         id: 2,
         image: 'fruits',
+        title: 'leather',
         links: 'leather.html',
     },
     // {
     //     id: 3,
     //     image: 'vegetables',
+    // title: 'handmade clay tiles',
     //     links: 'vegetables.html',
     // },
     // {
     //     id: 4,
     //     image: 'fruits',
+    // title: 'handmade clay tiles',
     //     links: 'fruits.html',
     // },
     {
         id: 4,
         image: 'handicrafts',
+        title: 'handicrafts',
         links: 'handicrafts.html',
     },
     {
         id: 5,
         image: 'fruits',
+        title: 'fruits &amp; vegetables',
         links: 'fruits&vegetables.html',
     },
     {
@@ -51,13 +57,16 @@ let products = [
 ];
 
 const product_wrapper = document.querySelector('.product_wrapper');
-products.map(({ image, links }) => {
+products.map(({ id, image, title, links }) => {
     product_wrapper.innerHTML += `
-        <a href="${links}" class="product_content d-flex justify-content-center align-items-end pb-3 pb-lg-4" style="background-image: url('/src/images/products/${image}.jpg');">
+        <a href="${links}" class="product_content d-flex justify-content-center align-items-end">
+        <img class="product_img w-100 h-100" src="/src/images/products/${image}.jpg" />
+        <div class="product_overlay d-flex justify-content-center align-items-center">
+            <h6 class="text-uppercase text-white">${title}</h6>
+        </div>
         </a>
         `
 });
-    // <a class="product_overlay d-none"> ${title}</a>
         // <button href="${links}" class="more_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill">
         //     more
         // </button>

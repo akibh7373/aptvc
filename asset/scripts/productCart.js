@@ -19,6 +19,41 @@ const cart = [
         image: 'vegetables.jpg',
         title: 'vegetables'
     },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'jute'
+    },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'leather'
+    },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'leather'
+    },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'seafood&driedfish'
+    },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'sun-driedfish'
+    },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'fruits&vegetables'
+    },
+    {
+        id: 4,
+        image: 'vegetables.jpg',
+        title: 'handmadeclaytitles'
+    },
 ];
 
 // show the product nav wrapper

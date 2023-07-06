@@ -1,36 +1,6 @@
 // 
 const shoesProducts = [
     {
-        id: 1,
-        image: 'jpg',
-        title: 'Bottle Gourd'
-    },
-    {
-        id: 2,
-        image: 'jpg',
-        title: 'Broccoli'
-    },
-    {
-        id: 3,
-        image: 'jpg',
-        title: 'Cabbage'
-    },
-    {
-        id: 4,
-        image: 'jpg',
-        title: 'capcicum'
-    },
-    {
-        id: 5,
-        image: 'jpg',
-        title: 'caulflower'
-    },
-    {
-        id: 6,
-        image: 'jpg',
-        title: 'coriander'
-    },
-    {
         id: 7,
         image: 'jpg',
         title: 'cucumber'
@@ -46,39 +16,9 @@ const shoesProducts = [
         title: 'egg plant'
     },
     {
-        id: 10,
-        image: 'jpg',
-        title: 'ghee kanchon'
-    },
-    {
-        id: 11,
-        image: 'jpg',
-        title: 'green paes'
-    },
-    {
-        id: 12,
-        image: 'jpg',
-        title: 'green chili'
-    },
-    {
-        id: 13,
-        image: 'jpg',
-        title: 'green papya'
-    },
-    {
-        id: 14,
-        image: 'jpg',
-        title: 'jute leaves'
-    },
-    {
         id: 15,
         image: 'jpg',
         title: 'kochu'
-    },
-    {
-        id: 16,
-        image: 'jpg',
-        title: 'kochur loti'
     },
     {
         id: 17,
@@ -91,32 +31,9 @@ const shoesProducts = [
         title: 'kohlrabi'
     },
     {
-        id: 19,
-        image: 'jpg',
-        title: 'lady finger'
-    },
-    {
         id: 20,
         image: 'jpg',
         title: 'lemon'
-    },
-];
-
-const bagsProduct = [
-    {
-        id: 21,
-        image: 'jpg',
-        title: 'Cabbage'
-    },
-    {
-        id: 22,
-        image: 'jpg',
-        title: 'mula radish'
-    },
-    {
-        id: 23,
-        image: 'jpg',
-        title: 'pointed gourd'
     },
     {
         id: 24,
@@ -129,22 +46,7 @@ const bagsProduct = [
         title: 'pumkin'
     },
     {
-        id: 26,
-        image: 'jpg',
-        title: 'red spinach'
-    },
-    {
-        id: 27,
-        image: 'jpg',
-        title: 'ridge gourd'
-    },
-    {
         id: 28,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 29,
         image: 'jpg',
         title: 'snake gourd'
     },
@@ -164,22 +66,7 @@ const bagsProduct = [
         title: 'snake gourd'
     },
     {
-        id: 33,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 34,
-        image: 'jpg',
-        title: 'ridge gourd'
-    },
-    {
         id: 35,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 36,
         image: 'jpg',
         title: 'snake gourd'
     },
@@ -189,25 +76,7 @@ const bagsProduct = [
         title: 'snake gourd'
     },
     {
-        id: 38,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 39,
-        image: 'jpg',
-        title: 'ridge gourd'
-    },
-];
-
-const accessoriesProduct = [
-    {
         id: 40,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 41,
         image: 'jpg',
         title: 'snake gourd'
     },
@@ -227,17 +96,105 @@ const accessoriesProduct = [
         title: 'snake gourd'
     },
     {
-        id: 45,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
         id: 46,
         image: 'jpg',
         title: 'snake gourd'
     },
     {
         id: 47,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+    {
+        id: 51,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+];
+
+const bagsProduct = [
+    {
+        id: 13,
+        image: 'jpg',
+        title: 'green papya'
+    },
+    {
+        id: 14,
+        image: 'jpg',
+        title: 'jute leaves'
+    },
+    {
+        id: 10,
+        image: 'jpg',
+        title: 'ghee kanchon'
+    },
+    {
+        id: 12,
+        image: 'jpg',
+        title: 'green chili'
+    },
+    {
+        id: 1,
+        image: 'jpg',
+        title: 'Bottle Gourd'
+    },
+    {
+        id: 3,
+        image: 'jpg',
+        title: 'Cabbage'
+    },
+    {
+        id: 4,
+        image: 'jpg',
+        title: 'capcicum'
+    },
+    {
+        id: 21,
+        image: 'jpg',
+        title: 'Cabbage'
+    },
+    {
+        id: 22,
+        image: 'jpg',
+        title: 'mula radish'
+    },
+    {
+        id: 23,
+        image: 'jpg',
+        title: 'pointed gourd'
+    },
+    {
+        id: 27,
+        image: 'jpg',
+        title: 'ridge gourd'
+    },
+    {
+        id: 29,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+    {
+        id: 33,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+    {
+        id: 34,
+        image: 'jpg',
+        title: 'ridge gourd'
+    },
+    {
+        id: 38,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+    {
+        id: 41,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+    {
+        id: 45,
         image: 'jpg',
         title: 'snake gourd'
     },
@@ -252,14 +209,47 @@ const accessoriesProduct = [
         title: 'snake gourd'
     },
     {
+        id: 53,
+        image: 'jpg',
+        title: 'snake gourd'
+    },
+    {
         id: 50,
         image: 'jpg',
         title: 'snake gourd'
     },
     {
-        id: 51,
+        id: 19,
         image: 'jpg',
-        title: 'snake gourd'
+        title: 'lady finger'
+    },
+];
+
+const accessoriesProduct = [
+    {
+        id: 11,
+        image: 'jpg',
+        title: 'green paes'
+    },
+    {
+        id: 16,
+        image: 'jpg',
+        title: 'kochur loti'
+    },
+    {
+        id: 2,
+        image: 'jpg',
+        title: 'Broccoli'
+    },
+    {
+        id: 5,
+        image: 'jpg',
+        title: 'caulflower'
+    },
+    {
+        id: 6,
+        image: 'jpg',
+        title: 'coriander'
     },
     {
         id: 52,
@@ -267,9 +257,19 @@ const accessoriesProduct = [
         title: 'snake gourd'
     },
     {
-        id: 53,
+        id: 26,
+        image: 'jpg',
+        title: 'red spinach'
+    },
+    {
+        id: 36,
         image: 'jpg',
         title: 'snake gourd'
+    },
+    {
+        id: 39,
+        image: 'jpg',
+        title: 'ridge gourd'
     },
 ];
 
