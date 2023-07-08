@@ -2,7 +2,6 @@ const shoesProducts = [
     {
         id: 1,
         image: 'jpg',
-        title: 'cucumber'
     },
     {
         id: 2,
@@ -104,14 +103,14 @@ const shoesProducts = [
         image: 'jpg',
         title: 'snake gourd'
     },
-    {
-        id: 22,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
 ];
 
 const bagsProduct = [
+    {
+        id: 22,
+        image: 'jpg',
+        title: 'green papya'
+    },
     {
         id: 23,
         image: 'jpg',
@@ -233,42 +232,30 @@ const accessoriesProduct = [
     {
         id: 46,
         image: 'jpg',
-        title: 'kochur loti'
     },
     {
         id: 47,
         image: 'jpg',
-        title: 'Broccoli'
     },
     {
         id: 48,
         image: 'jpg',
-        title: 'caulflower'
     },
     {
         id: 49,
         image: 'jpg',
-        title: 'coriander'
     },
     {
         id: 50,
         image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 51,
-        image: 'jpg',
-        title: 'red spinach'
     },
     {
         id: 52,
         image: 'jpg',
-        title: 'snake gourd'
     },
     {
         id: 53,
         image: 'jpg',
-        title: 'ridge gourd'
     },
 ];
 
@@ -282,7 +269,7 @@ shoesProducts.map(({ id, image, title }) => {
         <div
             id="${id}"
             class="jute_img items_img"
-            style="background-image: url('/src/images/pages/leather/items${id}.${image}');"
+            style="background-image: url('/src/images/pages/leather/${id}.${image}');"
         >
         </div>
         </div>
@@ -294,7 +281,7 @@ bagsProduct.map(({ id, image, title }) => {
         <div
             id="${id}"
             class="jute_img items_img"
-            style="background-image: url('/src/images/pages/leather/items${id}.${image}');"
+            style="background-image: url('/src/images/pages/leather/${id}.${image}');"
         >
         </div>
         </div>
@@ -306,7 +293,7 @@ accessoriesProduct.map(({ id, image, title }) => {
         <div
             id="${id}"
             class="jute_img items_img"
-            style="background-image: url('/src/images/pages/leather/items${id}.${image}');"
+            style="background-image: url('/src/images/pages/leather/${id}.${image}');"
         >
         </div>
         </div>

@@ -19,12 +19,17 @@
         position: relative;
         height: 100vh;
       }
-      footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
+      .footer {
+        position: static;
+      }
+      /* X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1400px) {
+        .footer {
+          position: absolute;
+          top: calc(100vh - 8vh);
+          left: 0;
+          width: 100%;
+        }
       }
     </style>
   </head>

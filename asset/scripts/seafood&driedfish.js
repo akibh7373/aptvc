@@ -90,6 +90,8 @@ const seaFoodProducts = [
         image: 'jpg',
         title: 'Churi Shutki'
     },
+];
+const fish = [
     {
         id: 19,
         image: 'jpg',
@@ -135,13 +137,25 @@ const seaFoodProducts = [
         image: 'jpg',
         // title: ''
     },
-];
 
+]
 const seafoodsWrapper = document.querySelector('.seafood_wrapper');
 const fishWrapper = document.querySelector('.fish_wrapper');
 
 seaFoodProducts.map(({ id, image, title }) => {
     seafoodsWrapper.innerHTML += `
+    <div class="jute_items text-center">
+        <div
+            id="${id}"
+            class="jute_img items_img"
+            style="background-image: url('/src/images/products/seafood&driedfish/${id}.${image}');"
+        >
+        </div>
+        </div>
+        `
+});
+fish.map(({ id, image, title }) => {
+    fishWrapper.innerHTML += `
     <div class="jute_items text-center">
         <div
             id="${id}"
