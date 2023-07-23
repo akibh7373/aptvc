@@ -2,13 +2,13 @@
 let products = [
     {
         id: 1,
-        image: 'fruits',
-        title: 'Jutes',
+        image: 'jutes',
+        title: 'jutes',
         links: 'jute.html',
     },
     {
         id: 2,
-        image: 'fruits',
+        image: 'leather',
         title: 'leather',
         links: 'leather.html',
     },
@@ -38,7 +38,7 @@ let products = [
     },
     {
         id: 6,
-        image: 'fruits',
+        image: 'handmadeclaytiles',
         title: 'handmade clay tiles',
         links: 'handmadeclaytiles.html',
     },

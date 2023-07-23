@@ -1,12 +1,12 @@
 /* 
 Theme Name: APt Private Ltd
 Text Domain: *********
-Versions: 1.0
+Versions: 1.2
 Describtion: ***************
 Tags: **********
 Author:
 AUthor URI:
-bootstrap 5.0
+Bootstrap 5.0
 */
 /* Google fonts (FIra Sans) */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
@@ -25,12 +25,10 @@ bootstrap 5.0
   z-index: 999999999;
   transition: opacity 0.75s, visibility 0.75s;
 }
-
 .loader--hidden {
   opacity: 0;
   visibility: hidden;
 }
-
 .circle_loader {
   position: absolute;
   top: 50%;
@@ -71,11 +69,9 @@ bootstrap 5.0
   z-index: 99999;
   transition: ease-in-out 0.2s;
 }
-
 .header_bg {
   background-color: var(--red);
 }
-
 .responsive_content {
   position: absolute;
   top: 0%;
@@ -85,17 +81,14 @@ bootstrap 5.0
   height: 400px;
   z-index: 99999;
 }
-
 .bar_area {
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
-
 .bar_area:hover .small_bar {
   width: 100%;
 }
-
 .bar {
   display: inline-block;
   transition: transform ease-in-out 0.3s;
@@ -103,11 +96,9 @@ bootstrap 5.0
   height: 1px;
   background-color: rgb(192, 192, 192);
 }
-
 .active_responsive_content {
   left: 0;
 }
-
 .close_btn {
   position: absolute;
   top: 0;
@@ -116,45 +107,36 @@ bootstrap 5.0
   color: #fff;
   cursor: pointer;
 }
-
 .left_menu {
   width: 50%;
 }
-
 .right_menu {
   width: 50%;
 }
-
 .left_menu,
 .center_menu,
 .right_menu {
   height: 100%;
 }
-
 .menu {
   font-size: 25px;
   font-weight: 600;
 }
-
 .logo {
   font-size: 30px;
   font-weight: 600;
 }
-
 .nav_link {
   font-weight: 600;
   transition: ease-in-out 0.3s;
 }
-
 .header_nav:hover {
   color: #fff !important;
 }
-
 .right_menu {
   background-color: #000;
   opacity: 0.9;
 }
-
 .payment_btn {
   border: 2px solid #fff;
   width: 200px;
@@ -163,25 +145,22 @@ bootstrap 5.0
   justify-content: center;
   align-items: center;
 }
-
 .follow_us {
   font-size: 19px;
 }
-
 .icons svg {
   font-size: 30px;
   transition: ease-in-out 250ms;
 }
-
 .icons svg:hover {
   color: var(--red);
 }
-
 .small_bar {
   margin: 13px 0;
   transition: ease-in-out 0.3s;
   width: 25px;
 }
+/* navigation product */
 .product_nav {
   position: relative;
 }
@@ -208,6 +187,7 @@ bootstrap 5.0
   height: 120px;
   border-radius: 50%;
 }
+
 /* ********** Banner ********** */
 .banner {
   position: relative;
@@ -224,59 +204,16 @@ video {
   object-fit: cover;
   z-index: -1;
 }
-video::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  content: "";
-  background-color: #000;
-  /* opacity: 0.8; */
-  z-index: -1;
-}
 .banner_child {
-  /* position: relative; */
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* z-index: 1; */
 }
-
-/* .banner_child::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #000;
-  opacity: 0.5;
-  z-index: -1;
-} */
-
-/* .banner_one {
-  background-image: url("/src/images/banner1.jpg");
-}
-
-.banner_two {
-  background-image: url("/src/images/banner2.jpg");
-}
-
-.banner_three {
-  background-image: url("/src/images/banner3.jpg");
-}
-
-.banner_four {
-  background-image: url("/src/images/banner4.jpg");
-} */
-
 .banner_heading_title {
   font-size: 65px;
   font-weight: 700;
 }
-
 .slick-dots {
   position: absolute;
   bottom: 0;
@@ -284,7 +221,6 @@ video::before {
   transform: translateX(-50%);
   z-index: 11;
 }
-
 .slick-prev.slick-arrow,
 .slick-next.slick-arrow {
   display: none !important;
@@ -309,7 +245,6 @@ video::before {
 .section_title {
   font-size: 50px;
 }
-
 .section_one_img {
   width: 450px;
   height: 450px;
@@ -322,7 +257,6 @@ video::before {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
 }
-
 .product_content {
   position: relative;
   border-radius: 15px;
@@ -371,15 +305,11 @@ video::before {
   opacity: 1;
   visibility: visible;
 }
-
-/* .more_btn {
-  border: none;
-  background-color: var(--red);
-} */
 .cross_area svg {
   font-size: 30px;
   cursor: pointer;
 }
+
 /* ******* gallery ********* */
 .gallery_wrapper {
   display: grid;
@@ -393,6 +323,7 @@ video::before {
   font-size: 30px;
   font-weight: 500;
 }
+
 /* ******* we specialized in ********* */
 .card_wrapper {
   display: grid;
@@ -444,7 +375,8 @@ video::before {
 .card_subtitle {
   font-weight: 600;
 }
-/* our stats */
+
+/* ******* our stats ******* */
 .our_stats {
   position: relative;
   background-image: url("/src/images/our-stats-bg.jpg");
@@ -480,7 +412,8 @@ video::before {
   font-size: 25px;
   font-weight: 500;
 }
-/* how it works */
+
+/* ******** how it works ******** */
 .how_it_works {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -538,6 +471,7 @@ span.long_line {
   font-size: 20px;
   line-height: 30px;
 }
+
 /* ********** Contact ********** */
 .from_wrapper input {
   border-radius: 15px;
@@ -546,22 +480,16 @@ span.long_line {
   position: relative;
   height: 55px;
 }
-
 textarea {
   border-radius: 15px;
   background-color: #ececec;
   border: 1px solid var(--white-primary);
 }
-
 label {
   position: absolute;
   top: 0;
   left: 0;
 }
-
-/* .message {
-  height: 100px;
-} */
 .submit_btn {
   border: 1px solid var(--red);
   height: calc(55px - 1px);
@@ -573,5 +501,3 @@ label {
   background-color: var(--red);
   color: #fff;
 }
-
-/* ********** footer ********** */

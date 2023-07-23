@@ -1,12 +1,12 @@
 const cart = [
     {
         id: 1,
-        image: 'vegetables.jpg',
+        image: 'jutes.jpg',
         title: 'jute'
     },
     {
         id: 2,
-        image: 'vegetables.jpg',
+        image: 'leather.jpg',
         title: 'leather'
     },
     {
@@ -31,22 +31,22 @@ const cart = [
     },
     {
         id: 7,
-        image: 'vegetables.jpg',
+        image: 'seafoods.jpg',
         title: 'seafood&driedfish'
     },
     {
         id: 8,
-        image: 'vegetables.jpg',
+        image: 'seafoods.jpg',
         title: 'sun-driedfish'
     },
     {
         id: 9,
-        image: 'vegetables.jpg',
+        image: 'fruits&vegetables.jpg',
         title: 'fruits&vegetables'
     },
     {
         id: 10,
-        image: 'vegetables.jpg',
+        image: 'handmadeclaytiles.jpg',
         title: 'handmadeclaytitles'
     },
 ];
