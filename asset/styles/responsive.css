@@ -3,6 +3,9 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
   }
+  .banner_heading_title {
+    font-size: 30px;
+  }
 }
 
 /* min and max width */
@@ -10,6 +13,9 @@
   .counter_wrapper {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
+  }
+  .banner_heading_title {
+    font-size: 40px;
   }
 }
 
@@ -48,11 +54,6 @@
   }
   .social_link svg {
     font-size: 30px;
-  }
-  /* banner */
-
-  .banner_heading_title {
-    font-size: 40px;
   }
   /* section one */
   .section_one_img {

@@ -15,40 +15,27 @@ const cart = [
         title: 'handicrafts'
     },
     {
-        id: 1,
-        image: 'fruits.jpg',
-        title: 'fruits'
-    },
-    {
-        id: 3,
-        image: 'seafoods.jpg',
-        title: 'seafoods'
-    },
-    {
-        id: 4,
-        image: 'vegetables.jpg',
-        title: 'vegetables'
-    },
-    {
         id: 7,
-        image: 'seafoods.jpg',
-        title: 'seafood&driedfish'
-    },
-    {
-        id: 8,
-        image: 'seafoods.jpg',
-        title: 'sun-driedfish'
-    },
-    {
-        id: 9,
         image: 'fruits&vegetables.jpg',
         title: 'fruits&vegetables'
     },
     {
-        id: 10,
+        id: 8,
         image: 'handmadeclaytiles.jpg',
         title: 'handmadeclaytitles'
     },
+    {
+        id: 4,
+        image: 'seafoods.jpg',
+        title: 'seafoods&frozenfish'
+    },
+    {
+        id: 6,
+        image: 'sundriedfish.jpg',
+        title: 'sun-driedfish'
+    },
+
+
 ];
 
 // show the product nav wrapper
