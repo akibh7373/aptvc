@@ -15,22 +15,22 @@ const cart = [
         title: 'handicrafts'
     },
     {
-        id: 7,
+        id: 4,
         image: 'fruits&vegetables.jpg',
         title: 'fruits&vegetables'
     },
     {
-        id: 8,
+        id: 5,
         image: 'handmadeclaytiles.jpg',
         title: 'handmadeclaytitles'
     },
     {
-        id: 4,
+        id: 6,
         image: 'seafoods.jpg',
         title: 'seafoods&frozenfish'
     },
     {
-        id: 6,
+        id: 7,
         image: 'sundriedfish.jpg',
         title: 'sun-driedfish'
     },
