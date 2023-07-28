@@ -12,10 +12,10 @@
   --white-primary: #e5e5e5;
   --blue-deep: #162738;
 }
-html,
 body {
   overflow-x: hidden;
   font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
   font-weight: 400;
 }
 

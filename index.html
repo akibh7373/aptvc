@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,19 +10,17 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="/asset/styles/bootstrap.min.css" />
     <link rel="stylesheet" href="/asset/styles/all.min.css" />
-    <link rel="stylesheet" href="/asset/styles/slick.css" />
     <link rel="stylesheet" href="/asset/styles/default.css" />
     <link rel="stylesheet" href="/asset/styles/global.css" />
     <link rel="stylesheet" href="/asset/styles/index.css" />
-    <link rel="stylesheet" href="/asset/styles/responsive.css" />
-</head>
+    <link rel="stylesheet" href="/asset/styles/responsive.css" /></head>
 
 <body>
     <!-- preloader -->
     <!-- <div class="loader bg-dark w-100 h-100">
         <div class="circle_loader"></div>
     </div> -->
-    
+
     <!-- Header Nav -->
     <nav class="header py-1 py-lg-1">
         <div class="container d-flex justify-content-lg-start align-items-lg-center">
@@ -68,71 +66,99 @@
         <div class="product_nav_wrapper py-lg-4">
         </div>
     </nav>
-    <!-- banner from github start -->
-    <div class="banner bg-dark">
-        <video autoplay loop muted plays-inline>
-            <source src="/src/videos/hero_bg.mp4" type="video/mp4">
-        </video>
-        <div class="banner_wrapper">
-            <div class="banner_child banner_one d-flex justify-content-center align-items-start flex-column">
-            <div class="container">
-                <h1 class="banner_heading_title text-uppercase text-white">
-                    Unleashing Global Trade, <span class="d-lg-block d-none"></span> Driving Economic Growth.
-                </h1>
-            </div>
+    <!-- banner slider -->
+    <div id="carouselExampleCaptions" class="banner carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active carousel-button" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="carousel-button" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="carousel-button" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="carousel-button" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="carousel-button" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="carousel-button" aria-label="Slide 3"></button>
         </div>
-        <div class="banner_child banner_two d-flex justify-content-center align-items-start flex-column">
-            <div class="container">
-                <h1 class="banner_heading_title text-uppercase text-white">
-                    Discover the Best of Bangladesh, <span class="d-lg-block d-none"></span> Delivered Worldwide.
-                </h1>
+        <div class="carousel-inner bg-dark">
+            <div class="carousel-item active">
+                <video src="/src/videos/video1.mp4" muted autoplay loop></video>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="banner_heading_title text-uppercase text-white">
+                            Unleashing Global Trade, <br> Driving Economic Growth.
+                        </h1>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="banner_child banner_three d-flex justify-content-center align-items-start flex-column">
-            <div class="container">
-                <h1 class="banner_heading_title text-uppercase text-white">
-                    Trade Global, Think <span class="d-lg-block d-none"></span> Global, Succeed Global.
-                </h1>
+            <div class="carousel-item">
+                <video src="/src/videos/video2.mp4" muted autoplay loop></video>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="banner_heading_title text-uppercase text-white">
+                            Discover the Best of Bangladesh, <br> Delivered Worldwide.
+                        </h1>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="banner_child banner_four d-flex justify-content-center align-items-start flex-column">
-            <div class="container">
-                <h1 class="banner_heading_title text-uppercase text-white">
-                    Crafted in Bangladesh, <span class="d-lg-block d-none"></span> Cherished Worldwide.
-                </h1>
+            <div class="carousel-item">
+                <img src="/src/images/banner/banner3.jpg" class="w-100" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="banner_heading_title text-uppercase text-white">
+                            Trade Global, Think <br> Global, Succeed Global.
+                        </h1>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="banner_child banner_three d-flex justify-content-center align-items-start flex-column">
-            <div class="container">
-                <h1 class="banner_heading_title text-uppercase text-white">
-                    Connect, Trade, Thrive <span class="d-lg-block d-none"></span> on the Global Stage.
-                </h1>
+            <div class="carousel-item">
+                <img src="/src/images/banner/banner4.jpg" class="w-100" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="banner_heading_title text-uppercase text-white">
+                            Crafted in Bangladesh, <br> Cherished Worldwide.
+                        </h1>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="carousel-item">
+                <img src="/src/images/banner/banner5.jpg" class="w-100" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="banner_heading_title text-uppercase text-white">
+                            Connect, Trade, Thrive <br> on the Global Stage.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/src/images/banner/banner6.jpg" class="w-100" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="banner_heading_title text-uppercase text-white">
+                            Trade Global, Think <br> Global, Succeed Global.
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- banner from github end -->
-   
     <!-- middle section one -->
     <div class="section_one py-5 py-lg-5 my-lg-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                     <div class="section_one_img_area text-center text-lg-start rounded-circle">
                         <img src="https://images.pexels.com/photos/2217513/pexels-photo-2217513.jpeg?auto=compress&cs=tinysrgb&w=600" alt="section_one_img" class="section_one_img rounded-circle" />
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                     <div class="section_one_wrapper py-lg-3 d-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-end flex-column">
                         <!-- <h2 class="heading_title my-3 mt-lg-5 mb-lg-4 text-uppercase text-dark">
                             Heading title
                         </h2> -->
-                        <p class="section_one_subtitle text-center text-lg-start text-dark">
+                        <p class="section_one_subtitle mt-lg-0 mt-4 text-dark">
                             Welcome to Aptwin Inc., a premier export-import, international trading, procurement, and sourcing company based in Bangladesh. With a strong focus on professionalism and unwavering dedication to customer satisfaction, we are committed to exceeding your expectations.
-At Aptwin Inc., we understand the intricacies of global trade. Our experienced team leverages deep industry knowledge, extensive networks, and meticulous attention to detail to deliver exceptional results. Whether you're looking to import or export goods, optimize your supply chain, or source high-quality products, we have the expertise to meet your needs.
-Transparency, integrity, and reliability are the cornerstones of our business. We prioritize ethical practices, adhere to international standards, and ensure seamless transactions at every step. Our goal is to forge long-term partnerships, providing you with a competitive edge in the global marketplace.
-Partnering with Aptwin Inc. means gaining a trusted ally that will guide you through the complexities of international trade. We strive for excellence in every aspect of our services, enabling you to expand your business horizons and achieve sustainable growth.
-Choose Aptwin Inc. as your strategic partner, and let us unlock the full potential of your business in the dynamic world of export-import and international trading. Experience our professionalism, reliability, and commitment to your success. Together, we will build a brighter future for your business.
+                            At Aptwin Inc., we understand the intricacies of global trade. Our experienced team leverages deep industry knowledge, extensive networks, and meticulous attention to detail to deliver exceptional results. Whether you're looking to import or export goods, optimize your supply chain, or source high-quality products, we have the expertise to meet your needs.
+                            Transparency, integrity, and reliability are the cornerstones of our business. We prioritize ethical practices, adhere to international standards, and ensure seamless transactions at every step. Our goal is to forge long-term partnerships, providing you with a competitive edge in the global marketplace.
+                            Partnering with Aptwin Inc. means gaining a trusted ally that will guide you through the complexities of international trade. We strive for excellence in every aspect of our services, enabling you to expand your business horizons and achieve sustainable growth.
+                            Choose Aptwin Inc. as your strategic partner, and let us unlock the full potential of your business in the dynamic world of export-import and international trading. Experience our professionalism, reliability, and commitment to your success. Together, we will build a brighter future for your business.
                         </p>
                     </div>
                 </div>
@@ -143,21 +169,21 @@ Choose Aptwin Inc. as your strategic partner, and let us unlock the full potenti
     <div class="section_one">
         <div class="container">
             <div class="row flex-lg-row flex-column-reverse">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                     <div class="section_one_wrapper py-lg-3 d-flex align-items-center align-items-lg-start flex-column">
                         <!-- <h2 class="heading_title my-3 mt-lg-5 mb-lg-4 text-uppercase text-dark">
                             Heading title
                         </h2> -->
-                        <p class="section_one_subtitle text-center text-lg-start text-dark">
+                        <p class="section_one_subtitle mt-lg-0 mt-4 text-dark">
                             Aptwin Inc., where professionalism and expertise are our guiding principles, with just a touch of lightheartedness to keep things enjoyable. As a premier export-import, international trading, and procurement company in Bangladesh, we combine industry knowledge and meticulous attention to detail to deliver exceptional results.
-At Aptwin Inc., we understand the complexities of global trade, and we navigate them with precision and expertise. Our team of seasoned professionals is well-versed in the intricacies of import and export regulations, logistics management, and market trends. With our extensive network of trusted suppliers and buyers, we ensure seamless transactions and optimal sourcing solutions for your business needs.
-Integrity and reliability are at the core of our operations. We prioritize transparency, ethical practices, and adherence to international standards. Our commitment to excellence extends to every facet of our work, from sourcing high-quality products to providing efficient supply chain solutions.
-Partnering with Aptwin Inc. means gaining a strategic ally dedicated to your success. We analyze market dynamics, identify emerging opportunities, and tailor our services to suit your specific requirements. With our expertise and unwavering professionalism, we empower your business to thrive in the competitive global marketplace.
-Choose Aptwin Inc. for a seamless, efficient, and trustworthy export-import experience. Let us handle the intricacies while you focus on growing your business. Together, we'll navigate the world of international trade with confidence and achieve new heights of success.
+                            At Aptwin Inc., we understand the complexities of global trade, and we navigate them with precision and expertise. Our team of seasoned professionals is well-versed in the intricacies of import and export regulations, logistics management, and market trends. With our extensive network of trusted suppliers and buyers, we ensure seamless transactions and optimal sourcing solutions for your business needs.
+                            Integrity and reliability are at the core of our operations. We prioritize transparency, ethical practices, and adherence to international standards. Our commitment to excellence extends to every facet of our work, from sourcing high-quality products to providing efficient supply chain solutions.
+                            Partnering with Aptwin Inc. means gaining a strategic ally dedicated to your success. We analyze market dynamics, identify emerging opportunities, and tailor our services to suit your specific requirements. With our expertise and unwavering professionalism, we empower your business to thrive in the competitive global marketplace.
+                            Choose Aptwin Inc. for a seamless, efficient, and trustworthy export-import experience. Let us handle the intricacies while you focus on growing your business. Together, we'll navigate the world of international trade with confidence and achieve new heights of success.
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                     <div class="section_one_img_area text-center text-lg-end rounded-circle">
                         <img src="https://images.pexels.com/photos/4483772/pexels-photo-4483772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="section_one_img" class="section_one_img rounded-circle" />
                     </div>
@@ -177,7 +203,9 @@ Choose Aptwin Inc. for a seamless, efficient, and trustworthy export-import expe
     <!-- gallery section -->
     <div class="gallery">
         <div class="container">
-            <div class="gallery_header py-5 py-lg-5 my-lg-5 text-center"><h2 class="heading_title text-uppercase">Product Customization Services</h2></div>
+            <div class="gallery_header py-5 py-lg-5 my-lg-5 text-center">
+                <h2 class="heading_title text-uppercase">Product Customization Services</h2>
+            </div>
             <div class="gallery_buttons pb-5 pb-lg-5 text-center">
                 <a data-filter="all" class="gallery_btn mb-2 me-2 px-3 py-1 mb-lg-3 me-lg-2 px-lg-4 py-lg-2 rounded text-uppercase red__bg text-white">All</a>
                 <a data-filter="screen_printing" class="gallery_btn mb-2 me-2 px-3 py-1 mb-lg-3 me-lg-2 px-lg-4 py-lg-2 rounded text-uppercase red__bg text-white">screen printing</a>
@@ -291,9 +319,9 @@ Choose Aptwin Inc. for a seamless, efficient, and trustworthy export-import expe
                     <p class="gallery_sub mb-lg-3">
                         Each product requires a different way of packing. Products made in your brand can be custom packed as required by you. We offer 100% customized packing options for :-
 
-Jute and Jute Cotton Products
-Cotton and Canvas Bags
-Leather Wallets, Purses and Bags
+                        Jute and Jute Cotton Products
+                        Cotton and Canvas Bags
+                        Leather Wallets, Purses and Bags
                     </p>
                 </div>
             </div>
@@ -309,22 +337,22 @@ Leather Wallets, Purses and Bags
             </div>
             <div class="card_wrapper pb-5 pb-lg-5 my-lg-5">
                 <div class="card_item d-flex p-3 p-md-4 p-lg-4 justify-content-end align-items-start flex-column card_one">
-                        <h4 class="card_title text-uppercase text-white">Sourcing</h4>
-                        <p class="card_subtitle mt-2 mt-lg-2 text-lg-start text-white">
-                            We find the best suppliers in terms of quality and budget
-                        </p>
+                    <h4 class="card_title text-uppercase text-white">Sourcing</h4>
+                    <p class="card_subtitle mt-2 mt-lg-2 text-lg-start text-white">
+                        We find the best suppliers in terms of quality and budget
+                    </p>
                 </div>
                 <div class="card_item d-flex p-3 p-md-4 p-lg-4 justify-content-end align-items-start flex-column  card_two">
-                        <h4 class="card_title text-uppercase text-white">packaging</h4>
-                        <p class="card_subtitle mt-2 mt-lg-2 text-lg-start text-white">
-                            We find the best suppliers in terms of quality and budget
-                        </p>
+                    <h4 class="card_title text-uppercase text-white">packaging</h4>
+                    <p class="card_subtitle mt-2 mt-lg-2 text-lg-start text-white">
+                        We find the best suppliers in terms of quality and budget
+                    </p>
                 </div>
                 <div class="card_item d-flex p-3 p-md-4 p-lg-4 justify-content-end align-items-start flex-column  card_three">
-                        <h4 class="card_title text-uppercase text-white">exporting</h4>
-                        <p class="card_subtitle mt-2 mt-lg-2 text-lg-start text-white">
-                            We find the best suppliers in terms of quality and budget
-                        </p>
+                    <h4 class="card_title text-uppercase text-white">exporting</h4>
+                    <p class="card_subtitle mt-2 mt-lg-2 text-lg-start text-white">
+                        We find the best suppliers in terms of quality and budget
+                    </p>
                 </div>
             </div>
         </div>
@@ -363,7 +391,8 @@ Leather Wallets, Purses and Bags
         <div class="how_it_works">
             <div class="how_it_works_wrap ps-5 pt-5 pb-5 pe-5 ps-lg-5 pt-lg-5 pb-lg-0 pe-lg-5">
                 <h3><span class="heading_title_first d-inline-block d-lg-block me-2 text-uppercase text-white">how it</span>
-                    <span class="heading_title_second d-inline-block d-lg-block text-uppercase text-white">works</span></h3>
+                    <span class="heading_title_second d-inline-block d-lg-block text-uppercase text-white">works</span>
+                </h3>
                 <img src="/src/images/icons.png" alt="" class="how_it_icons">
                 <span class="long_line"></span>
                 <h4 class="how_it_works_title text-uppercase text-white">online trading</h4>
@@ -439,16 +468,13 @@ Leather Wallets, Purses and Bags
         <footer class="footer py-3 py-lg-3 red__bg">
             <div class="container">
                 <div class="footer_wrapper d-flex justify-center justify-content-md-between justify-content-lg-between align-items-center align-items-lg-center flex-column flex-md-row flex-lg-row">
-                    <p class="text-capitalize text-white">&copy;right reserved by <a href="index.html" class="text-uppercase text-white">apt private ltd</a>.</p><p class="text-white">Developed by <a href="" class="text-uppercase text-white"><u>ar craft</u></a></p>
+                    <p class="text-capitalize text-white">&copy;right reserved by <a href="index.html" class="text-uppercase text-white">apt private ltd</a>.</p>
+                    <p class="text-white">Developed by <a href="" class="text-uppercase text-white"><u>ar craft</u></a></p>
                 </div>
             </div>
         </footer>
         <!-- Scripts -->
         <script src="/asset/scripts/jquery-2.2.4.min.js"></script>
-        <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
         <script src="/asset/scripts/bootstrap.min.js"></script>
         <script src="/asset/scripts/all.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
@@ -457,8 +483,6 @@ Leather Wallets, Purses and Bags
         <script src="/asset/scripts/product.js"></script>
         <script src="/asset/scripts/slider.js"></script>
         <script src="/asset/scripts/productCart.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script src="/asset/scripts/index.js"></script>
 </body>
 

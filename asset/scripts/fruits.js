@@ -72,10 +72,10 @@ const fruitsProducts = [
     },
 ];
 
-const jute_wrapper = document.querySelector('.fruits_wrapper');
+const fruits_wrapper = document.querySelector('.fruits_wrapper');
 
 fruitsProducts.map(({ id, image, title }) => {
-    jute_wrapper.innerHTML += `
+    fruits_wrapper.innerHTML += `
         <div class="jute_items text-center">
             <div
                 id="${id}"
@@ -89,5 +89,4 @@ fruitsProducts.map(({ id, image, title }) => {
 // <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
 
 {/* <a href="" class="more_btn vegetable_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill text-center">more</a> */ }
-
 
