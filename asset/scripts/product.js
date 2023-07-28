@@ -60,10 +60,10 @@ const product_wrapper = document.querySelector('.product_wrapper');
 products.map(({ id, image, title, links }) => {
     product_wrapper.innerHTML += `
         <a href="${links}" class="product_content d-flex justify-content-center align-items-end">
-        <img class="product_img w-100 h-100" src="/src/images/products/${image}.jpg" />
-        <div class="product_overlay d-flex justify-content-center align-items-center">
-            <h6 class="text-uppercase text-white">${title}</h6>
-        </div>
+            <img class="product_img w-100 h-100" src="/src/images/products/${image}.jpg" />
+            <div class="product_overlay d-flex justify-content-center align-items-center">
+                <h6 class="text-uppercase text-center text-white">${title}</h6>
+            </div>
         </a>
         `
 });
