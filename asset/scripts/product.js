@@ -50,7 +50,7 @@ let products = [
     },
     {
         id: 8,
-        image: 'seafoods',
+        image: 'sundriedfish',
         title: 'sun dried fish',
         links: 'sun-dried-fish.html',
     },
