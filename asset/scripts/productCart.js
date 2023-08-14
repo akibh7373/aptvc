@@ -27,12 +27,12 @@ const cart = [
     {
         id: 6,
         image: 'seafoods.jpg',
-        title: 'seafoods&frozenfish'
+        title: 'seafood&frozenfish'
     },
     {
         id: 7,
         image: 'sundriedfish.jpg',
-        title: 'sun-driedfish'
+        title: 'sun-dried-fish'
     },
 
 

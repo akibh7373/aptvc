@@ -46,7 +46,7 @@ let products = [
         id: 7,
         image: 'seafoods',
         title: 'seafoods and frozen fish',
-        links: 'seafood&driedfish.html',
+        links: 'seafood&frozenfish.html',
     },
     {
         id: 8,
