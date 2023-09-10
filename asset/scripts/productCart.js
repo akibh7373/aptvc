@@ -3,13 +3,13 @@ const cart = [
         id: 1,
         image: 'jutes.jpg',
         title: 'jute',
-        links: 'jutes',
+        links: 'jute',
     },
     {
         id: 2,
         image: 'leather.jpg',
         title: 'leather',
-        links: 'leathers',
+        links: 'leather',
     },
     {
         id: 3,
@@ -22,7 +22,6 @@ const cart = [
         image: 'fruits&vegetables.jpg',
         title: 'fruits & vegetables',
         links: 'fruits&vegetables',
-
     },
     {
         id: 5,

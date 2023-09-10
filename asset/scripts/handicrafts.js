@@ -1,4 +1,4 @@
-// 
+// handiCraftsProducts array of multiple object
 const handiCraftsProducts = [
     {
         id: 1,
@@ -23,12 +23,12 @@ const handiCraftsProducts = [
     {
         id: 5,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 6,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 7,
@@ -53,32 +53,32 @@ const handiCraftsProducts = [
     {
         id: 11,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 12,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 13,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 14,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 15,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
     {
         id: 16,
         image: 'jpg',
-        // title: 'amla'
+        title: 'amla'
     },
 ];
 
@@ -93,11 +93,11 @@ handiCraftsProducts.map(({ id, title }) => {
                 style="background-image: url('/src/images/products/handicraft/item${id}.jpg');"
             >
             </div>
-            <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
         </div>
-        `
+    `
 });
 
+// <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
 {/* <a href="" class="more_btn vegetable_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill text-center">more</a> */ }
 
 

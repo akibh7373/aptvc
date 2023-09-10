@@ -50,6 +50,10 @@ body {
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
+  .items_img {
+    height: 200px;
+    object-fit: contain;
+  }
   .vegetables_wrapper {
     grid-template-columns: repeat(4, 1fr);
   }

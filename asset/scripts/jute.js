@@ -285,33 +285,31 @@ const jute_accessories_wrapper = document.querySelector('.jute_accessories_wrapp
 const fabBags_wrapper = document.querySelector('.fab_bags_wrapper');
 juteBags.map(({ id, image, title }) => {
     juteBags_wrapper.innerHTML += `
-    <div class="jute_items text-center">
-        <div class="items_img">
-        <img id="${id}" class="jute_img" src="/src/images/pages/jute/items${id}.${image}"
+        <div class="jute_items text-center">
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/pages/jute/items${id}.${image}"
+            </div>
         </div>
-        </div>
-        `
+    `
 });
 juteAccessProducts.map(({ id, image, title }) => {
     jute_accessories_wrapper.innerHTML += `
-    <div class="jute_items text-center">
-        <div class="items_img">
-        <img id="${id}" class="jute_img" src="/src/images/pages/jute/items${id}.${image}"
+        <div class="jute_items text-center">
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/pages/jute/items${id}.${image}"
+            </div>
         </div>
-        </div>
-        `
+    `
 });
 fabBags.map(({ id, image, title }) => {
     fabBags_wrapper.innerHTML += `
-    <div class="jute_items text-center">
-        <div class="items_img">
-        <img id="${id}" class="jute_img" src="/src/images/pages/jute/items${id}.${image}"
+        <div class="jute_items text-center">
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/pages/jute/items${id}.${image}"
+            </div>
         </div>
-        </div>
-        `
+    `
 });
 
 {/* <a href="" class="more_btn vegetable_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill text-center">more</a> */ }
-    // <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
-
-
+// <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>

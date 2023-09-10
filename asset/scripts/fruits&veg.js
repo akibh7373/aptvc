@@ -71,40 +71,40 @@ const nameGroup = [
         name: 'papaya',
         links: 'papaya',
     },
-    // {
-    //     name: 'red vegetables',
-    // },
-    // {
-    //     name: 'puishak',
-    // },
-    // {
-    //     name: 'broken',
-    // },
-    // {
-    //     name: 'pour out',
-    // },
-    // {
-    //     name: 'shrimp',
-    // },
-    // {
-    //     name: 'radish',
-    // },
-    // {
-    //     name: 'wolkopi',
-    // },
-    // {
-    //     name: 'shrimp',
-    // },
-    // {
-    //     name: 'radish',
-    // },
+    // start from 18 to remove element { name }
+    {
+        name: 'red vegetables',
+    },
+    {
+        name: 'puishak',
+    },
+    {
+        name: 'broken',
+    },
+    {
+        name: 'pour out',
+    },
+    {
+        name: 'shrimp',
+    },
+    {
+        name: 'radish',
+    },
+    {
+        name: 'wolkopi',
+    },
+    {
+        name: 'shrimp',
+    },
+    {
+        name: 'radish',
+    },
 ];
-
+nameGroup.splice(18, 9);
 const season_fruits_area = document.querySelector('.season_fruits_area');
-
 nameGroup.map(({ name, links }) => {
     season_fruits_area.innerHTML += `
-     <a href="${links}.html" class="season_fruits ps-3 py-2 mb-lg-2 ps-lg-3 py-lg-1 w-100 text-uppercase">
-     ${name}</a>
-     `
-})
+    <a href="${links}.html" class="season_fruits ps-3 py-2 mb-lg-2 ps-lg-3 py-lg-1 w-100 text-uppercase">
+    ${name}</a>
+    `
+});
