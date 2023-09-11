@@ -36,17 +36,14 @@ const handMadeProducts = [
         title: 'flower vase'
     },
 ];
-
 const handMade_wrapper = document.querySelector('.handmade_wrapper');
 
 handMadeProducts.map(({ id, title }) => {
     handMade_wrapper.innerHTML += `
         <div class="jute_items text-center">
-            <img
-                id="${id}"
-                class="jute_img items_img"
-                src="src/images/products/handmade/${id}.jpg"
-            />
+            <div class="items_img">
+                <img id="${id}" class="jute_img w-100 h-100" loading="lazy" src="/src/images/products/handmade/${id}.jpg" />
+            </div>
         </div>
     `
 });

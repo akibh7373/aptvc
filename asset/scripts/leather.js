@@ -266,38 +266,29 @@ const accessories_wrapper = document.querySelector('.accessories_wrapper');
 shoesProducts.map(({ id, image, title }) => {
     shoes_wrapper.innerHTML += `
     <div class="jute_items text-center">
-        <div
-            id="${id}"
-            class="jute_img items_img"
-            style="background-image: url('/src/images/pages/leather/${id}.${image}');"
-        >
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/pages/leather/${id}.${image}"
+            </div>
         </div>
-        </div>
-        `
+    `
 });
 bagsProduct.map(({ id, image, title }) => {
     bags_wrapper.innerHTML += `
     <div class="jute_items text-center">
-        <div
-            id="${id}"
-            class="jute_img items_img"
-            style="background-image: url('/src/images/pages/leather/${id}.${image}');"
-        >
-        </div>
-        </div>
-        `
+    <div class="items_img">
+        <img id="${id}" class="jute_img" loading="lazy" src="/src/images/pages/leather/${id}.${image}"
+    </div>
+</div>
+    `
 });
 accessoriesProduct.map(({ id, image, title }) => {
     accessories_wrapper.innerHTML += `
-    <div class="jute_items text-center">
-        <div
-            id="${id}"
-            class="jute_img items_img"
-            style="background-image: url('/src/images/pages/leather/${id}.${image}');"
-        >
+        <div class="jute_items text-center">
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/pages/leather/${id}.${image}"
+            </div>
         </div>
-        </div>
-        `
+    `
 });
 // <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
 

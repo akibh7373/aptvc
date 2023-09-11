@@ -34,13 +34,6 @@ body {
 .items_title {
   font-size: 20px;
 }
-.footer {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
 @media (max-width: 575.98px) {
   .items_wrapper {
     grid-template-columns: repeat(3, 1fr);
