@@ -144,26 +144,20 @@ const fishWrapper = document.querySelector('.fish_wrapper');
 
 seaFoodProducts.map(({ id, image, title }) => {
     seafoodsWrapper.innerHTML += `
-    <div class="jute_items text-center">
-        <div
-            id="${id}"
-            class="jute_img items_img"
-            style="background-image: url('/src/images/products/seafood&driedfish/${id}.${image}');"
-        >
-        </div>
+        <div class="jute_items text-center">
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/products/seafood&driedfish/${id}.${image}"
+            </div>
         </div>
         `
 });
 fish.map(({ id, image, title }) => {
     fishWrapper.innerHTML += `
     <div class="jute_items text-center">
-        <div
-            id="${id}"
-            class="jute_img items_img"
-            style="background-image: url('/src/images/products/seafood&driedfish/${id}.${image}');"
-        >
+        <div class="items_img">
+            <img id="${id}" class="jute_img" loading="lazy" src="/src/images/products/seafood&driedfish/${id}.${image}"
         </div>
-        </div>
+    </div>
         `
 });
 // <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>

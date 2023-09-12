@@ -32,17 +32,14 @@ const sun_dried_fish_wrapper = document.querySelector('.sun_dried_fish_wrapper')
 sunDriedFishProducts.map(({ id, image }) => {
     sun_dried_fish_wrapper.innerHTML += `
     <div class="jute_items text-center">
-        <div
-            id="${id}"
-            class="jute_img items_img"
-            style="background-image: url('/src/images/products/sun-dired-fish/${id}.${image}');"
-        >
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/products/sun-dired-fish/${id}.${image}"
+            </div>
         </div>
-    </div>
     `
 });
 
 {/* <a href="" class="more_btn vegetable_btn px-4 px-lg-5 py-2 py-lg-2 text-uppercase text-white rounded-pill text-center">more</a> */ }
-    // <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
+// <h5 class="items_title mt-3 mt-lg-3 text-capitalize text-center">${title}</h5>
 
 

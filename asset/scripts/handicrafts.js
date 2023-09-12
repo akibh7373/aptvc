@@ -87,11 +87,8 @@ const handicrafts_wrapper = document.querySelector('.handicrafts_wrapper');
 handiCraftsProducts.map(({ id, title }) => {
     handicrafts_wrapper.innerHTML += `
         <div class="jute_items text-center">
-            <div
-                id="${id}"
-                class="jute_img items_img"
-                style="background-image: url('/src/images/products/handicraft/item${id}.jpg');"
-            >
+            <div class="items_img">
+                <img id="${id}" class="jute_img" loading="lazy" src="/src/images/products/handicraft/item${id}.jpg"
             </div>
         </div>
     `

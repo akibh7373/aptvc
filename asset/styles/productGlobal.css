@@ -36,10 +36,11 @@ body {
 }
 @media (max-width: 575.98px) {
   .items_wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .items_img {
-    height: 80px;
+    height: 150px;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
