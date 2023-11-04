@@ -196,67 +196,67 @@ const bagsProduct = [
         image: 'jpg',
         title: 'snake gourd'
     },
-    {
-        id: 40,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 41,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 42,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 43,
-        image: 'jpg',
-        title: 'snake gourd'
-    },
-    {
-        id: 44,
-        image: 'jpg',
-        title: 'lady finger'
-    },
-];
+//     {
+//         id: 40,
+//         image: 'jpg',
+//         title: 'snake gourd'
+//     },
+//     {
+//         id: 41,
+//         image: 'jpg',
+//         title: 'snake gourd'
+//     },
+//     {
+//         id: 42,
+//         image: 'jpg',
+//         title: 'snake gourd'
+//     },
+//     {
+//         id: 43,
+//         image: 'jpg',
+//         title: 'snake gourd'
+//     },
+//     {
+//         id: 44,
+//         image: 'jpg',
+//         title: 'lady finger'
+//     },
+// ];
 
-const accessoriesProduct = [
-    {
-        id: 45,
-        image: 'jpg',
-        title: 'green paes'
-    },
-    {
-        id: 46,
-        image: 'jpg',
-    },
-    {
-        id: 47,
-        image: 'jpg',
-    },
-    {
-        id: 48,
-        image: 'jpg',
-    },
-    {
-        id: 49,
-        image: 'jpg',
-    },
-    {
-        id: 50,
-        image: 'jpg',
-    },
-    {
-        id: 52,
-        image: 'jpg',
-    },
-    {
-        id: 53,
-        image: 'jpg',
-    },
+// const accessoriesProduct = [
+//     {
+//         id: 45,
+//         image: 'jpg',
+//         title: 'green paes'
+//     },
+//     {
+//         id: 46,
+//         image: 'jpg',
+//     },
+//     {
+//         id: 47,
+//         image: 'jpg',
+//     },
+//     {
+//         id: 48,
+//         image: 'jpg',
+//     },
+//     {
+//         id: 49,
+//         image: 'jpg',
+//     },
+//     {
+//         id: 50,
+//         image: 'jpg',
+//     },
+//     {
+//         id: 52,
+//         image: 'jpg',
+//     },
+//     {
+//         id: 53,
+//         image: 'jpg',
+//     },
 ];
 
 const shoes_wrapper = document.querySelector('.shoes_wrapper');
